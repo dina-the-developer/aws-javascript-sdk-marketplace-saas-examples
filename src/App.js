@@ -38,6 +38,8 @@ const App = () => {
           .listEntitlements(entitlementParams)
           .promise();
 
+        console.log(entitlementResponse);
+
         // Set the customer information in the state
         setCustomerInfo({ metering: meteringResponse, entitlement: entitlementResponse });
       } catch (error) {

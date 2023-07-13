@@ -12,7 +12,7 @@ const App = () => {
 
         // Resolve customer using the marketplace token
         const resolveCustomerParams = {
-          RegistrationToken: 'YOUR_MARKETPLACE_TOKEN',
+          RegistrationToken: 'YOUR_MARKETPLACE_TOKEN', // replace it with Post Marketplace token.
         };
         const resolveCustomerResponse = await marketplaceMetering
           .resolveCustomer(resolveCustomerParams)
